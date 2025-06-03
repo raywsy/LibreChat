@@ -1,0 +1,22 @@
+version: 1.0.9
+endpoints:
+  custom:
+    - name: "KKSJ-AI"
+      apiKey: "${OPENAI_KK_API_KEY}"
+      baseURL: "https://api.kksj.org/v1/chat/completions"
+      models:
+        default: ["gpt-4o", "gpt-4.1", "gpt-4.1-mini", "gpt-4.1-nano", 'o3']
+        fetch: true
+      titleConvo: true
+      titleModel: "gpt-4.1"
+      modelDisplayLabel: "KK-GPT"
+      
+    - name: "OPEN_AI_HK"
+      apiKey: "${OPENAI_HK_API_KEY}"
+      baseURL: "https://api.openai-hk.com/v1/chat/completions"
+      models:
+        default: ["gpt-4-turbo","gpt-4-turbo-preview","gpt-3.5-turbo","gpt-4-all"]
+        fetch: true
+      titleConvo: true
+      titleModel: "gpt-4-turbo-preview"
+      modelDisplayLabel: "HK-GPT"
