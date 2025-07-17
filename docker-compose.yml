@@ -24,7 +24,7 @@ services:
       - type: bind
         source: ./.env
         target: /app/.env
-      - ./images:/app/client/public/images
+      - ./images:/images
       - ./uploads:/app/uploads
       - ./logs:/app/api/logs
   mongodb:
